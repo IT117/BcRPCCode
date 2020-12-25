@@ -127,34 +127,45 @@
 
 
         <ul id="menusimple" class="menusimple menumain" onclick="mobileMenuHover(event);" ontouchstart="mobileMenuHover(event);">
-            <li><a class="is-expand">介绍</a>
+            <li><a class="is-expand">Blockchain</a>
                 <ul>
-                    <li><a href="https://bitcoin.org/zh_CN/bitcoin-for-individuals">个人</a></li>
-                    <li><a href="https://bitcoin.org/zh_CN/bitcoin-for-businesses">商家</a></li>
-                    <li><a href="https://developer.bitcoin.org/">开发者</a></li>
-                    <li><a href="https://bitcoin.org/zh_CN/getting-started">入门指南</a></li>
-                    <li><a href="https://bitcoin.org/zh_CN/how-it-works">工作原理</a></li>
+                    <li><a href="https://bitcoin.org/zh_CN/bitcoin-for-individuals">getbestblockhash</a></li>
+
+                    <li><a href="count.html">getblockcount
+                        </a></li>
+                    <li><a href="https://developer.bitcoin.org/">getblockchaininfo
+                        </a></li>
+                    <li><a href="https://bitcoin.org/zh_CN/getting-started">getblock</a></li>
+                    <li><a href="https://bitcoin.org/zh_CN/how-it-works">getblockhash height</a></li>
 
                     <li><a href="https://bitcoin.org/zh_CN/bitcoin-paper">White paper</a></li>
 
                 </ul>
             </li>
-            <li><a class="is-expand">资源</a>
+            <li><a class="is-expand">Wallet</a>
                 <ul>
-                    <li><a href="https://bitcoin.org/zh_CN/resources">资源</a>
-                    </li><li><a href="https://bitcoin.org/zh_CN/exchanges">兑换</a></li>
-                    <li><a href="https://bitcoin.org/zh_CN/community">社区</a></li>
+                    <li><a href="https://bitcoin.org/zh_CN/resources">getbalances
+                        </a>
+                    </li><li><a href="https://bitcoin.org/zh_CN/exchanges">getwalletinfo</a></li>
+                    <li><a href="https://bitcoin.org/zh_CN/community">listlockunspent</a></li>
 
 
-                    <li><a href="https://bitcoin.org/zh_CN/vocabulary">词汇表</a></li>
-                    <li><a href="https://bitcoin.org/zh_CN/events">活动</a></li>
+                    <li><a href="https://bitcoin.org/zh_CN/vocabulary">abortrescan
+                        </a></li>
+                    <li><a href="https://bitcoin.org/zh_CN/events">listwallets</a></li>
 
                     <li><a href="https://bitcoin.org/zh_CN/download">比特币核心</a></li>
 
                 </ul>
             </li>
-            <li><a href="https://bitcoin.org/zh_CN/innovation">创新</a></li>
-            <li><a class="is-expand">参与</a>
+            <li><a href="" class="is-expand">Control</a>
+            <ul>
+                <li>getmemoryinfo</li>
+                <li>getrpcinfo</li>
+                <li>help</li>
+                <li>uptime</li>
+            </ul></li>
+            <li><a class="is-expand">Network</a>
                 <ul>
                     <li><a href="https://bitcoin.org/zh_CN/support-bitcoin">支持比特币</a>
                     </li><li><a href="https://bitcoin.org/zh_CN/buy">购买比特币</a></li>
@@ -351,7 +362,7 @@
             <div class="container hero-container">
                 <p class="mainsummary">你想要的区块信息，这里都有。</p>
                 <div class="btn-container">
-                    <a class="btn btn-bright btn-home" href="https://bitcoin.org/zh_CN/getting-started">比特币入门指南</a>
+                    <a class="btn btn-bright btn-home" href="https://bitcoin.org/zh_CN/getting-started">BTC命令入门指南</a>
                     <a class="btn btn-light btn-home" href="https://bitcoin.org/zh_CN/choose-your-wallet">选择钱包</a>
                     <a class="btn btn-light btn-home" href="https://bitcoin.org/zh_CN/buy">购买比特币</a>
                 </div>
@@ -393,7 +404,7 @@
         </div>
         <div class="maindesc">
             <div class="container">
-                <p class="section-title center home-title" id="maindesc-title">比特币入门指南</p>
+                <p class="section-title center home-title" id="maindesc-title">BTC命令入门指南</p>
                 <div class="row maindesc-row">
                     <div>
                         <p class="maindesc-text">比特币基于P2P技术运作，无需中央管理机构或银行；交易管理和比特币发行由比特币网络统一进行。<b>比特币是开源的；其设计是公开的，任何人都无法拥有或控制比特币网络，<a href="https://bitcoin.org/zh_CN/support-bitcoin">人人都可参与其中</a></b>。基于其种种独有的特性，比特币使之前任何支付系统都无法实现的激动人心的用途成为可能。</p>
@@ -421,7 +432,7 @@
                     <img class="maindesc-img" src="./img/bitcoin-img.svg" alt="Bitcoin image">
                 </div>
                 <div class="btn-container">
-                    <a class="btn btn-dark btn-home center" href="https://bitcoin.org/zh_CN/getting-started">比特币入门指南</a>
+                    <a class="btn btn-dark btn-home center" href="https://bitcoin.org/zh_CN/getting-started">BTC命令入门指南</a>
                 </div>
             </div>
         </div>
@@ -451,7 +462,7 @@
                 <div class="donate">
                     <div class="row donate-row">
                         <div>
-                            <span class="footer-title">支持Bitcoin.org:</span>
+                            <span class="footer-title">支持Bitcoin命令:</span>
                             <a onclick="openDonationModal()" class="donate-btn btn-bright">捐助</a>
                             <p class="donate-text">
                                 <a class="donate-link" href="bitcoin:3E8ociqZa9mZUSwGdSmAEMAoAxBK3FNDcd" target="_blank">3E8ociqZa9mZUSwGdSmAEMAoAxBK3FNDcd</a>
@@ -536,7 +547,7 @@
                         <a href="https://bitcoin.org/en/privacy">Privacy Policy</a>
 
                         <a href="https://bitcoin.org/zh_CN/press">新闻媒体</a>
-                        <a href="https://bitcoin.org/zh_CN/about-us">关于bitcoin.org</a>
+                        <a href="https://bitcoin.org/zh_CN/about-us">关于bitcoin命令</a>
                         <a href="https://bitcoin.org/en/blog">Blog</a>
                     </div>
                 </div>
@@ -554,7 +565,7 @@
         <div class="footer-bottom">
             <div class="container">
                 <div class="row footer-bottom-row">
-                    <div class="footerlicense">© Bitcoin Project 2009-2020 基于<a href="http://opensource.org/licenses/mit-license.php" target="_blank">MIT协议</a>授权发布</div>
+                    <div class="footerlicense">© Bitcoin 命令 2009-2020 基于<a href="http://opensource.org/licenses/mit-license.php" target="_blank">MIT协议</a>授权发布</div>
                     <div class="row footer-status-block">
                         <a href="https://bitcoin.org/en/alerts" class="statusmenu">Network Status</a>
 

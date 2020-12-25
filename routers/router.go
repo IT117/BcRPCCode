@@ -13,4 +13,7 @@ func init() {
 	beego.Router("/register.html", &controllers.RegisterController{})
 	//进入主页面
 	beego.Router("/home",&controllers.LoginController{})
+	//进入Blockcount页面
+	beego.Router("/count",&controllers.BlockcountController{})
+	beego.Router("/count.html",&controllers.BlockcountController{})
 }
