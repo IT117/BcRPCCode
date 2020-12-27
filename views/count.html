@@ -5,22 +5,56 @@
     <title>区块信息</title>
     <style type="text/css">
         #div1{
-            background-color: #8c8c8c;
+            background:whitesmoke;
+            position: absolute;/*设置div以绝对的位置显示*/
+            top: 50%;
+            left: 50%;
+            margin: -140px 0 0 -180px;/*外边距*/
             height: 300px;
             width: 400px;
+            opacity: 0.5;
+            word-break: break-all;/*多出来换行*/
         }
+        #div2{
+            margin-left:530px;
+        }
+        #div2 input{
+            height: 30px;
+            width: 250px;
+
+        }
+        #div3{margin-left: 505px}
+        #div3 input{
+            width: 300px;
+        }
+        #div4{
+            position: absolute;
+            top: 90px;
+            margin-left: 790px;
+        }
+        .class1{
+            margin: 0px;
+            background: url("../static/img/btC2.jpg") no-repeat;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+        }
+       
     </style>
 </head>
 
-<body>
+<body class="class1">
+<h1 align="center"><font color="white">区块信息查询</font> </h1>
 
 <form action="/info" method="post">
+    <div id="div2">
     <input readonly="true" name="count" value="{{.Count}}">
-<input name="arguments" value="" size="400px" type="text">
-{{/*<input readonly="true"  type="text" maxlength="10000000" value="{{.Info}}" style="display: block"; size="888">*/}}
-你要查的东西！
-
+    </div>
+    <div id="div3">
+<input name="arguments" value="" size="40px" type="text">
+    </div>
+    <div id="div4">
 <button type="submit">查询</button>
+    </div>
 </form>
 <div id="div1">
     {{.Info}}

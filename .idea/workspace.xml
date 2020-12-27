@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7d2e45b-a87c-4345-b969-0eeb94dc2d3f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/controllers/InfoControllers.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/bitcoinJudge.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/user.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/BlockInfo.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/btC2.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/queryBlockcountController.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/queryBlockcountController.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routers/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/routers/router.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/RPCService.go" beforeDir="false" afterPath="$PROJECT_DIR$/utils/RPCService.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/bitcoinJudge.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/bitcoinJudge.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/count.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/count.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/home.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,20 +59,20 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../BcRPCCode" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\goprojects\src\BeegoBcRPCCode\static\css" />
-      <recent name="C:\Users\goprojects\src\BeegoBcRPCCode\static\js" />
-      <recent name="C:\Users\goprojects\src\BeegoBcRPCCode\static\img" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\goprojects\src\BeegoBcRPCCode\static\img" />
       <recent name="C:\Users\goprojects\src\BeegoBcRPCCode\views" />
       <recent name="C:\Users\goprojects\src\BeegoBcRPCCode\views\login" />
       <recent name="C:\Users\goprojects\src\BeegoBcRPCCode\login" />
       <recent name="C:\Users\goprojects\src\BeegoBcRPCCode\utils" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\goprojects\src\BeegoBcRPCCode\static\img" />
+      <recent name="C:\Users\goprojects\src\BeegoBcRPCCode\static\css" />
+      <recent name="C:\Users\goprojects\src\BeegoBcRPCCode\static\js" />
     </key>
   </component>
   <component name="RunManager">
@@ -118,22 +111,22 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="108" y="99" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1609049616838" />
-    <state width="1237" height="125" key="GridCell.Tab.0.bottom" timestamp="1609049302299">
+    <state width="1237" height="124" key="GridCell.Tab.0.bottom" timestamp="1609062265908">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="125" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1609049302299" />
-    <state width="1237" height="125" key="GridCell.Tab.0.center" timestamp="1609049302299">
+    <state width="1237" height="124" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1609062265908" />
+    <state width="1237" height="124" key="GridCell.Tab.0.center" timestamp="1609062265908">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="125" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1609049302299" />
-    <state width="1237" height="125" key="GridCell.Tab.0.left" timestamp="1609049302299">
+    <state width="1237" height="124" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1609062265908" />
+    <state width="1237" height="124" key="GridCell.Tab.0.left" timestamp="1609062265908">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="125" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1609049302299" />
-    <state width="1237" height="125" key="GridCell.Tab.0.right" timestamp="1609049302299">
+    <state width="1237" height="124" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1609062265908" />
+    <state width="1237" height="124" key="GridCell.Tab.0.right" timestamp="1609062265908">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="125" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1609049302299" />
+    <state width="1237" height="124" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1609062265908" />
     <state x="3" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1608684663554">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
