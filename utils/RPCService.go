@@ -1,6 +1,7 @@
 package utils
 
 import (
+	"BcRPCCode/entity"
 	"BeegoBcRPCCode/models"
 	"encoding/json"
 	"fmt"
@@ -28,4 +29,21 @@ func GetBestBlockHash() string {
 		return ""
 	}
 	return rpcResult.Result.(string)
+}
+//获取当前节点的区块的信息
+func GetBlockInfoByHash(hash string) *models.BlockInfo {
+	result := RpcRequest("getblock", hash)
+	var rpcResult entity.RPCResult
+
+	err := json.Unmarshal(result, &rpcResult)
+	if err != nil {
+		return nil
+	}
+	blockStr := rpcResult.Result.(map[string]interface{})
+	var block models.BlockInfo
+	block.Hash = blockStr["hash"].(string)
+	block.Size = blockStr["size"].(float64)
+	block.Height = blockStr["height"].(float64)
+	block.Version = blockStr["version"].(float64)
+	return &block
 }

@@ -2,13 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7d2e45b-a87c-4345-b969-0eeb94dc2d3f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/queryBlockcountController.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/btC1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/count.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/InfoControllers.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/bitcoinJudge.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/user.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/BlockInfo.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/queryBlockcountController.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/queryBlockcountController.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routers/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/routers/router.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/RPCService.go" beforeDir="false" afterPath="$PROJECT_DIR$/utils/RPCService.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/count.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/count.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/home.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,8 +39,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Go File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="Go File" />
       </list>
     </option>
   </component>
@@ -102,34 +106,34 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="383" y="150" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1608813016959" />
-    <state x="371" y="91" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1608812112584">
+    <state x="371" y="91" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1608883889490">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="371" y="91" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1608812112584" />
+    <state x="371" y="91" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1608883889490" />
     <state x="93" y="100" width="453" height="487" key="DiffContextDialog" timestamp="1608543416511">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="93" y="100" width="453" height="487" key="DiffContextDialog/0.0.1280.680@0.0.1280.680" timestamp="1608543416511" />
-    <state x="108" y="99" key="FileChooserDialogImpl" timestamp="1608858391707">
+    <state x="108" y="99" key="FileChooserDialogImpl" timestamp="1609049616838">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="108" y="99" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1608858391707" />
-    <state width="1237" height="125" key="GridCell.Tab.0.bottom" timestamp="1608820404521">
+    <state x="108" y="99" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1609049616838" />
+    <state width="1237" height="125" key="GridCell.Tab.0.bottom" timestamp="1609049302299">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="125" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1608820404521" />
-    <state width="1237" height="125" key="GridCell.Tab.0.center" timestamp="1608820404521">
+    <state width="1237" height="125" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1609049302299" />
+    <state width="1237" height="125" key="GridCell.Tab.0.center" timestamp="1609049302299">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="125" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1608820404521" />
-    <state width="1237" height="125" key="GridCell.Tab.0.left" timestamp="1608820404521">
+    <state width="1237" height="125" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1609049302299" />
+    <state width="1237" height="125" key="GridCell.Tab.0.left" timestamp="1609049302299">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="125" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1608820404521" />
-    <state width="1237" height="125" key="GridCell.Tab.0.right" timestamp="1608820404521">
+    <state width="1237" height="125" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1609049302299" />
+    <state width="1237" height="125" key="GridCell.Tab.0.right" timestamp="1609049302299">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="125" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1608820404521" />
+    <state width="1237" height="125" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1609049302299" />
     <state x="3" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1608684663554">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

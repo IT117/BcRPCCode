@@ -129,16 +129,30 @@
         <ul id="menusimple" class="menusimple menumain" onclick="mobileMenuHover(event);" ontouchstart="mobileMenuHover(event);">
             <li><a class="is-expand">Blockchain</a>
                 <ul>
-                    <li><a href="https://bitcoin.org/zh_CN/bitcoin-for-individuals">getbestblockhash</a></li>
+                    <form action="/count" method="post">
+                        <li><button type="submit" name="count" value="getbestblockhash" style="border: none;background-color: white;">
+                                getbestblockhash
+                            </button></li>
+                    </form>
+                    <form action="/count" method="post">
+                        <li><button type="submit" name="count" value="getblockcount" style="border: none;background-color: white;">
+                                getblockcount
+                            </button></li>
+                    </form>
+                    <form action="/count" method="post">
 
-                    <li><a href="count.html">getblockcount
-                        </a></li>
-                    <li><a href="https://developer.bitcoin.org/">getblockchaininfo
-                        </a></li>
-                    <li><a href="https://bitcoin.org/zh_CN/getting-started">getblock</a></li>
-                    <li><a href="https://bitcoin.org/zh_CN/how-it-works">getblockhash height</a></li>
-
-                    <li><a href="https://bitcoin.org/zh_CN/bitcoin-paper">White paper</a></li>
+                    <li><button type="submit" name="count" value="getblockchininfo" style="background-color:white;border: none ">
+                            getblockchaininfo
+                        </button></li></form>
+                    <form action="/count" method="post">
+                    <li><button type="submit" name="count" value="getblock" style="background-color:white;border: none">getblock</button> </li>
+                    </form>
+                    <form action="/count" method="post">
+                    <li><button type="submit" name="count" value="getblockhash" style="background-color: white;border: none">getblockhash height</button></li>
+                    </form>
+                    <form action="/count" method="post">
+                        <li><button type="submit" name="count" value="White paper" style="background-color: white;border: none">getblockhash height</button></li>
+                    </form>
 
                 </ul>
             </li>

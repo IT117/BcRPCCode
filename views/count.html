@@ -3,10 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>区块信息</title>
+    <style type="text/css">
+        #div1{
+            background-color: #8c8c8c;
+            height: 300px;
+            width: 400px;
+        }
+    </style>
 </head>
+
 <body>
-<input readonly="true" value="{{.Count}}">
+
+<form action="/info" method="post">
+    <input readonly="true" name="count" value="{{.Count}}">
+<input name="arguments" value="" size="400px" type="text">
+{{/*<input readonly="true"  type="text" maxlength="10000000" value="{{.Info}}" style="display: block"; size="888">*/}}
 你要查的东西！
+
+<button type="submit">查询</button>
+</form>
+<div id="div1">
+    {{.Info}}
+
+
+</div>
 
 </body>
 </html>

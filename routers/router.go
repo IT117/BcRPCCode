@@ -16,4 +16,6 @@ func init() {
 	//进入Blockcount页面
 	beego.Router("/count",&controllers.BlockcountController{})
 	beego.Router("/count.html",&controllers.BlockcountController{})
+	//进入信息页
+	beego.Router("/info",&controllers.InfoControllers{})
 }
