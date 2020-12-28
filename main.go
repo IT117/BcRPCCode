@@ -14,7 +14,7 @@ func main() {
 	db_mysql.ConnectDB()
 
 	//获取最新区块 hash
-	BlockHash:=utils.GetBestBlockHash()
+	BlockHash:=utils.GetBlockHeader("000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f",true)
 	fmt.Println("最新区块的哈希：",BlockHash)
 
     //设置静态资源路径
