@@ -24,7 +24,8 @@ func (i *InfoControllers)Post(){
 
 	fmt.Println(u.Count)
 	fmt.Println(u.Arguments)
-	Info:=BictoinJudge(u.Count,u.Arguments,true)//接收的是万能类型
+	fmt.Println(u.Arguments1)
+	Info:=BictoinJudge(u.Count,u.Arguments,u.Arguments1)//接收的是万能类型
 	fmt.Println("======================",Info)
 	i.Data["Info"]=Info
 	i.TplName="count.html"

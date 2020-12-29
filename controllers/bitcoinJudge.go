@@ -48,10 +48,18 @@ func BictoinJudge(bitcoin string, target interface{},target1 interface{}) interf
 
 		return Hash
 	}
+	//获取工作证明难度的最小倍数
+	if bitcoin=="getdifficulty"{
+		difficulty:=utils.Getdifficulty()
+		return difficulty
+
+	}
 	//获取指定区块的区块头信息
 	if bitcoin=="getblockheader" {
 		blockheader:=utils.GetBlockHeader(target.(string),target1.(bool))
+		fmt.Println("传入参数",target1)
 		return blockheader
 	}
+
 	return nil
 }

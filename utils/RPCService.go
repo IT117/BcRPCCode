@@ -75,3 +75,15 @@ func GetBlockHeader(hash string, bool bool) *models.BlockHeader{
 
 	return &blockheader
 }
+//获取区块的难度
+func Getdifficulty()float64{
+	resule:=RpcRequest("getdifficulty")
+	var rpcResult entity.RPCResult
+	json.Unmarshal(resule,&rpcResult)
+	return  rpcResult.Result.(float64)
+}
+//获取一个新的比特币地址
+//返回每个本地区块链的最高位区块（tip）信息
+//测试：升级时间
+//查询余额
+//打印钱包信息

@@ -47,19 +47,17 @@
 
 <form action="/info" method="post">
     <div id="div2">
-    <input  name="count" value="{{.Count}}">
+    <input  name="count" value="{{.Count}}" placeholder="请输入命令">
     </div>
     <div id="div3">
-<input name="arguments" value="" size="40px" type="text">
+<input name="arguments" value="" placeholder="参数一" size="40px" type="text">
     </div>
     <div id="div4">
-<button type="submit">查询</button>
+<button type="submit" style="cursor: pointer;">查询</button>
     </div>
 </form>
 <div id="div1">
     {{.Info}}
-
-
 </div>
 
 </body>
