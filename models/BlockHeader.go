@@ -2,18 +2,18 @@ package models
 
 type BlockHeader struct {
 	Hash string
-	Confirmations int
-	Height int
-	Version int
+	Confirmations float64
+	Height float64
+	Version float64
 	VersionHex string
 	Merkleroot string
-	Time int
-	Mediantime int
-	Nonce int
+	Time float64
+	Mediantime float64
+	Nonce float64
 	Bits string
-	Difficukty int
+	Difficulty float64
 	Chainword string
-	Ntx int
+	Ntx float64
 	Perniousblockhash string
 	Nextbkoxkhash string
 }

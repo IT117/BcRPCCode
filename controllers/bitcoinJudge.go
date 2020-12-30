@@ -38,6 +38,7 @@ func BictoinJudge(bitcoin string, target interface{},target1 interface{}) interf
 	//获取当前节点的最新的区块的hash
 	if bitcoin == "gitbestblockhash" {
 		Hash := utils.GetBestBlockHash()
+
 		return Hash
 	}
 	//获取指定高度的区块哈希
@@ -56,7 +57,10 @@ func BictoinJudge(bitcoin string, target interface{},target1 interface{}) interf
 	}
 	//获取指定区块的区块头信息
 	if bitcoin=="getblockheader" {
-		blockheader:=utils.GetBlockHeader(target.(string),target1.(bool))
+		target1Str:=target1.(string)
+		tarbool,_:=strconv.ParseBool(target1Str)
+
+		blockheader:=utils.GetBlockHeader(target.(string),tarbool)
 		fmt.Println("传入参数",target1)
 		return blockheader
 	}

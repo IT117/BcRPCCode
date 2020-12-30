@@ -72,6 +72,10 @@ func GetBlockHeader(hash string, bool bool) *models.BlockHeader{
 	blockHeaderStr:=rpcResult.Result.(map[string]interface{})
 	var blockheader  models.BlockHeader
 	blockheader.Hash=blockHeaderStr["hash"].(string)
+	blockheader.Difficulty=blockHeaderStr["difficulty"].(float64)
+	blockheader.Nonce=blockHeaderStr["nonce"].(float64)
+	blockheader.Version=blockHeaderStr["version"].(float64)
+	blockheader.Height=blockHeaderStr["height"].(float64)
 
 	return &blockheader
 }

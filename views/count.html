@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>区块信息</title>
     <style type="text/css">
+
         #div1{
             background:whitesmoke;
             position: absolute;/*设置div以绝对的位置显示*/
@@ -23,7 +24,7 @@
             width: 250px;
 
         }
-        #div3{margin-left: 505px}
+        #div3{margin-left: 460px}
         #div3 input{
             width: 300px;
         }
@@ -32,6 +33,9 @@
             top: 90px;
             margin-left: 790px;
         }
+        #div5{margin-left: 770px;
+        position: absolute;
+        top: 122px}
         .class1{
             margin: 0px;
             background: url("../static/img/btC2.jpg") no-repeat;
@@ -52,12 +56,15 @@
     <div id="div3">
 <input name="arguments" value="" placeholder="参数一" size="40px" type="text">
     </div>
+    <div id="div5">
+        <input name="arguments1" value="" placeholder="参数二" type="text">
+    </div>
     <div id="div4">
 <button type="submit" style="cursor: pointer;">查询</button>
     </div>
 </form>
 <div id="div1">
-    {{.Info}}
+   {{.s}} {{.Info}}
 </div>
 
 </body>
